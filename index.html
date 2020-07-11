@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Declaration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form">
+                <span class="contact100-form-title">
+                    Declaration
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate="No more than 50 characters">
+                    <span class="label-input100">Full Name (as in ID document)</span>
+                    <input class="input100" type="text" name="name" placeholder="Enter your Full Name">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Only letters and numbers, no more than 20 characters">
+                    <span class="label-input100">NRIC/FIN/Passport No.</span>
+                    <input class="input100" type="text" name="ic" placeholder="Enter your NRIC/FIN/Passport No.">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Only 8 numbers, start with 6, 8 or 9">
+                    <span class="label-input100">Mobile No.</span>
+                    <input class="input100" type="text" name="mobile" placeholder="Enter your Mobile No.">
+                    <span class="focus-input100"></span>
+                </div>
+                
+                <div class="wrap-div100">
+                    <div class="qrcode-container">
+                        <div id="qrcode"></div>
+                    </div>
+                    <div class="error-messge">
+                        System Error
+                    </div>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <div class="wrap-contact100-form-btn">
+                        <div class="contact100-form-bgbtn"></div>
+                        <button class="contact100-form-btn validate-form-btn">
+                            <span>
+                                Generate QR Code
+                                <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="mask"></div>
+    <div class="loader"></div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/qrcode/qrcode.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/encrypt/jsencrypt.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
